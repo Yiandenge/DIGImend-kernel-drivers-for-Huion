@@ -29,4 +29,16 @@
 #--重启后即可正常连接数位板。
 #--其他细节问题请仔细阅读官方自述文件。
 #
+#键位映射xsetwacom
+#--可用xsetwacom基本解决，这里举一个GIMP的键位(by Roger)，可保存为sh脚本运行
+#--#!/bin/sh
+#--xsetwacom –set “HUION Huion Tablet Pad pad” Button 1 key +ctrl +z -z -ctrl
+#--xsetwacom –set “HUION Huion Tablet Pad pad” Button 2 key +shift +e
+#--xsetwacom –set “HUION Huion Tablet Pad pad” Button 3 key +p
+#--xsetwacom –set “HUION Huion Tablet Pad pad” Button 8 key +shift + =
+#--xsetwacom –set “HUION Huion Tablet Pad pad” Button 9 key + –
+#--xsetwacom –set “HUION Huion Tablet Pad pad” Button 10 key + ]
+#--xsetwacom –set “HUION Huion Tablet Pad pad” Button 11 key + [
+#--xsetwacom –set “HUION Huion Tablet Pad pad” Button 12 key + m
+#
 #--文档写于2020/05/04/11:28:45 周一
