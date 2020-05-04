@@ -8,6 +8,8 @@ and maintained by the DIGImend project. We maintain this package to provide
 newer drivers for older kernel versions which don't have them, and to allow
 users to test new drivers before we contribute them to the mainline kernel.
 
+国内用户请直接查看[安装方式]文件大体了解安装过程。
+
 See the [list of supported tablets][supported_tablets] on the [project
 website][website].
 
