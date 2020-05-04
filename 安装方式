@@ -1,0 +1,32 @@
+＃下载数位板驱动文件（linux系统）
+#绘王/高漫设备驱动一样的
+#1. 确定设备ID
+#--代码
+#--终端输入：lsusb
+#--例如：（绘王数位板/Gaoman 1060pro）ID：256c:006e
+#--其他设备：
+#--无法确定ID的情况下通过输入两次代码：lsusb
+#--第一次插入数位板输入代码确认全部USB设备ID
+#--第二次拔出数位板输入代码再次确定全部USB设备ID
+#
+#2.下载驱动文件（注：此方式需要下载安装git，并具备一定的git基础知识/主要在终端中拉取下载仓库文件）
+#--官方github页面：https://github.com/Huion-Linux/DIGImend-kernel-drivers-for-Huion（注：请确定最新版本）
+#--git init（更新.git文件仓库，此命令在此可用可不用）
+#--git clone拉取Huion Linux/DIGImend Huion的github仓库文件
+#--代码：
+#--需要确定本地文件夹路径（自行百度查找资料，1.进入到xx/x/路径，代码：cd /xx/x/ 2.进入根目录，代码：cd ./ ）
+#--终端输入：git clone https：//github.com/Huion-Linux/DIGImend-kernel-drivers-for-Huion
+#--等待仓库拉取完成
+#
+#3.手动下载 
+#--github仓库页面下载任意格式文件（deb/taz.gz/source.zip/Source.taz.gz）
+#--仓库页面下方：自述文件-->releases page(版本页面)-->根据官方说明选择适合最低版本文件下载
+#--官方设备支持页面说明：http://digimend.github.io/drivers/digimend/tablets/
+#--解压驱动文件即可
+#
+#--重启计算机即可，或者输入代码：
+#--sudo modprobe -r hid-kye hid-uclogic hid-polostar hid-viewsonic
+#--重启后即可正常连接数位板。
+#--其他细节问题请仔细阅读官方自述文件。
+#
+#--文档写于2020/05/04/11:14:20 周一
